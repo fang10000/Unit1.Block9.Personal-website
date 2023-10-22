@@ -1,0 +1,40 @@
+header {
+    background-color: #FDFEFE;
+    height: 50px;
+    text-align:right;
+}
+nav a{
+    font-family: 'Courier New', Courier, monospace;
+    color: #363636ff;
+    text-decoration: none;
+}
+.image_off, #menu:hover .image_on{
+    display:none
+ }
+ .image_on, #menu:hover .image_off{
+    display:block
+ }
+ 
+body {background-color: #f3f3f3ff;}
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+    }
+.column {
+    float: left;
+    width: 50%;
+}
+.column2 {
+    float: left;
+    width: 33%;
+}
+img {
+    max-width: 80%;
+    max-height: 80%;
+    display:block
+}
+p {
+    line-height: 150%;
+    text-align: justify;
+}
