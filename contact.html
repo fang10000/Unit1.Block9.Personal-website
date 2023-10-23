@@ -16,10 +16,36 @@
 </header>
 <body>
     <h1>Contact</h1>
-    <h2>Phone</h2>
-    <p>110-101-0110</p>
-    <h2>Email</h2>
-    <p>ten-comma-thousand@zeromail.com</p>
-    <a id="menu" href="https://google.com"><img class="image_on" src="img/submitH.png" /><img class="image_off" src="img/submit.png"/></a>
+    <form name="contactForm" style="margin-left: 5%;" onsubmit="return validateForm()" method="post">
+        <input type="text" name="First Name" placeholder="First Name" required>
+        <input type="text" id="Last Name" placeholder="Last Name" required>
+        <br>
+        <input type="text" id="Email" placeholder="Email Address" required>
+        <input type="text" id="Subject" placeholder="Subject Line" required>
+        <br>
+        <input type="text" id="Message" style="height: 200px; width: 290px;" placeholder="Your message here" required>
+        <!--input type="image" src="img/submitH.png" alt="Submit"-->
+    </form>
+    <br>
+    <a id="menu" href="https://google.com"><img class="image_on" style="margin-left: 5%;" src="img/submitH.png" /><img class="image_off" style="margin-left: 20%;" src="img/submit.png"/></a>
 </body>
+<br>
+<hr>
+<footer> 
+    <div class="column3">
+        <h3 style="font-weight: bold;">Phone</h3>
+        <p>110-101-1101</p>
+    </div>
+    <div class="column3">
+        <h3 style="font-weight: bold;">Email</h3>
+        <p>ten-thousand@zero-mail.com</p>
+    </div>
+    <div class="column3">
+        <h3 style="font-weight: bold;">Follow Me</h3>
+        <p>¯\_(ツ)_/¯ (no social media)</p>
+    </div>
+    <div class="column3">
+        <p style="font-size: smaller; margin-right: 30%;">Best effort to recreate Wix html template 2846 with some personal touch</p>
+    </div>
+</footer>
 </html>
