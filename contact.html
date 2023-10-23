@@ -5,6 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
     <link href="style.css" rel="stylesheet" type="text/css">
+    <style>
+        form {line-height: height 150%;}
+        input {width: 250px; margin-bottom:30px;display: block;}
+        Label{margin-bottom: 30px; font-family: 'Courier New', Courier, monospace;}
+    </style>
 </head>
 <header>
     <nav>
@@ -17,17 +22,39 @@
 <body>
     <h1>Contact</h1>
     <form name="contactForm" style="margin-left: 5%;" onsubmit="return validateForm()" method="post">
-        <input type="text" name="First Name" placeholder="First Name" required>
-        <input type="text" id="Last Name" placeholder="Last Name" required>
-        <br>
-        <input type="text" id="Email" placeholder="Email Address" required>
-        <input type="text" id="Subject" placeholder="Subject Line" required>
-        <br>
-        <input type="text" id="Message" style="height: 200px; width: 290px;" placeholder="Your message here" required>
-        <!--input type="image" src="img/submitH.png" alt="Submit"-->
+        <label>
+            First Name
+            <input type="text" id="First Name" placeholder="First Name" required>
+        </label>
+       <label>
+            Last Name
+            <input type="text" id="Last Name" placeholder="Last Name" required>
+       </label>
+        <label>
+            Email
+            <input type="text" id="Email" placeholder="Email Address" required>
+        </label>
+        <label>
+            Subject
+            <input type="text" id="Subject" placeholder="Subject Line" required>
+        </label>
+        <label>
+            Message
+            <table>
+                <tr>
+                    <td> 
+                        <input type="text" id="Message" style="height: 250px; width: 300px;" placeholder="Your message here" required>
+                    </th>
+                    <td>
+                        <input type="image" src="img/submitH.png" alt="Submit">
+                        <!--onclick="window.location.href = 'https://google.com';"-->
+                    </th>
+                </tr>
+            </table>
+        </label>
     </form>
     <br>
-    <a id="menu" href="https://google.com"><img class="image_on" style="margin-left: 5%;" src="img/submitH.png" /><img class="image_off" style="margin-left: 20%;" src="img/submit.png"/></a>
+    <!--a id="menu" href="https://google.com"><img class="image_on" style="margin-left: 5%;" src="img/submitH.png" /><img class="image_off" style="margin-left: 5%;" src="img/submit.png"/></a-->
 </body>
 <br>
 <hr>
