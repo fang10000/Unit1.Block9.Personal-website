@@ -1,11 +1,32 @@
-/* .container {
-display: flex;
-position: absolute;
-left: 50%;
-transform: translate(-50%,0);
-flex-direction: row;
-background-color:red;
-} */
+
+header {
+    background-color: #FDFEFE;
+    height: 50px;
+    font-family: 'Courier New', Courier, monospace; 
+    text-align: right;
+}
+
+nav a {
+    font-family: 'Courier New', Courier, monospace;
+    color: #363636ff;
+    text-decoration: none;
+}
+
+body {
+    animation: fadeInAnimation ease 1s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
 
 .container {
     display: grid;
@@ -20,12 +41,28 @@ background-color:red;
     /* background-color:red; */
 }
 
-.box1,
-.box2 {
+.box1 {
+    grid-area: box1
     flex: 50%;
     height: 575px;
     /* background-color: aqua;
     border: 2px solid black; */
+}
+
+.box2 {
+    grid-area: box2
+    flex: 50%;
+    height: 575px;
+    /* background-color: aqua;
+    border: 2px solid black; */
+}
+
+.footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
 }
 
 .hello {
@@ -76,11 +113,6 @@ background-color:red;
     /* border: 2px solid black;  */
 }
 
-.footer {
-    flex: 25%;
-    background-color: darkorange;
-    border: 2px solid black;
-}
 
 img {
     width: auto;
@@ -105,7 +137,7 @@ img {
         left: 50%;
         transform: translate(-50%, 0);
         flex-direction: column;
-        background-color: red;
+        /* background-color: red; */
     }
 
     .box1 {
